@@ -49,6 +49,10 @@ main{
   color: #333333;
   font-size: 12px;
   font-family: var(--font-family);
+  background-color: #fff;
+}
+.top-header .accordion-button:focus {
+  box-shadow: none;
 }
 /* start top header  */
 /* start header left  */
@@ -124,4 +128,43 @@ main{
 }
 .left-header ul li a:focus {
   color: var(--nav-font-hover-color) !important;
+}
+.social-link {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+.social-link span {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-link .fb, .social-link .insta {
+  background-color: #3b5998;
+}
+.social-link .tr{
+  background-color:#55acee;
+}
+.social-link .pin {
+  background-color: #bd081c;
+}
+.odernow-btn button {
+  border: none;
+  background-color: #ed1559;
+  height: 40px;
+  width: fit-content;
+  padding: 6px 15px;
+}
+.odernow-btn span {
+  background-color: #ed1559;
+  height: 40px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1px 15px;
+  padding: 6px 
 }
