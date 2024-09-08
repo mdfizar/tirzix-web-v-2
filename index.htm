@@ -6,6 +6,7 @@
     <title>Sunitix</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- custom css  -->
      <link rel="stylesheet" href="assets/css/main.css">
      <link rel="stylesheet" href="assets/css/responsive.css">
@@ -25,7 +26,7 @@
           <div class="collapse navbar-collapse bg-white px-2" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-lg-none">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">HOME</a>
+                <Link class="nav-link" aria-current="page"to="#">HOME</Link>
               </li>
               <li class="nav-item">
               <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -94,7 +95,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link">CONTACT</a>
+                <Link class="nav-link">CONTACT</Link>
               </li>
             </ul>
           </div>
@@ -175,10 +176,10 @@
       </div>
       <!--start social link  -->
       <div class="odernow-btn d-flex justify-content-center">
-        <div class="d-flex w-100 ju">
+        <a href="#" class="d-flex w-100 justify-content-center nav-link">
           <button>Oder now</button>
           <span><i class="fa-solid fa-angle-right"></i></span>
-        </div>
+        </a>
       </div>
       </div>
      <!-- start left header  -->
@@ -186,11 +187,190 @@
       <main>
         <!-- start bannar slider  -->
         <section>
-          <img class="w-100" src="https://sunitix.net/wp-content/uploads/2017/08/sunitix-one.jpg" alt="">
+          <div class="swiper banner-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="w-100" src="https://sunitix.net/wp-content/uploads/2017/08/sunitix-one.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-100" src="https://sunitix.net/wp-content/uploads/2017/08/sunitix-one.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-100" src="https://sunitix.net/wp-content/uploads/2017/08/sunitix-one.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </section>
         <!-- end bannar slider  -->
+         <!-- start content  -->
+          <section class="content">
+            <div class="title py-5">
+              <img src="assets/img/superitory-of-sunitinib.png" alt="title image">
+            </div>
+            <div class="descrition">
+              <p>
+                <b>Sunitix</b> is an oncology product. It is used to treat cancer by preventing the activity of a special group of proteins which are known to be involved in the growth and spread of cancer cells.
+                Sunitix will only be prescribed by a doctor with experienced in the use of anti-cancer medicinal products.<br><br>
+                Sunitix is used for the treatment of unresectable and/or metastatic malignant gastrointestinal stromal tumour (GIST) in adults after failure of imatinib treatment due to resistance or intolerance.
+              </p>
+            </div>
+            <div class="title py-4">
+              <h3 class="title"> Gastrointestinal stromal tumour (GIST)</h3>
+            </div>
+            <div class="descrition">
+              <p><b>Sunitinib</b> is effective & safe in patients with advanced gastrointestinal stromal tumour after failure of imatinib treatment due to resistance or intolerance.</p>
+            </div>
+            <div class="title">
+              <h3 class="title">Metastatic renal cell carcinoma</h3>
+            </div>
+            <div class="description">
+              <p>Sunitix is used for the treatment of advanced/metastatic renal cell carcinoma (MRCC) in adults.</p>
+            </div>
+            <div class="title">
+              <h3 class="title">Pancreatic neuroendocrine tumours (pNET)</h3>
+            </div>
+            <div class="description">
+              <p>Sunitix is used for the treatment of unresectable or metastatic, well-differentiated pancreatic neuroendocrine tumours (pNET) with disease progression in adults.
+              It is limited to use Sunitinib as the first line treatment.</p>
+            </div>
+            <!-- read more  -->
+             <div class="container pt-5 pb-2">
+              <div class="row readmor-container">
+                <div class="col-lg-6">
+                  <div>
+                    <h3 class="sub-title">Beacon Introduces Global Patient Support Program</h3>
+                    <p>Life saving drugs are either beyond the reach of general people or not available in many countries. Because of the patient exemptions for Bangladeshi companies,Beacon Pharmaceuticals can manufacture the patented drugs. As a support to global patient.</p>
+                    <button class="redmore">Read More</button>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div>
+                    <h3 class="sub-title">Registered and Licensed by Regulatory Authority of Bangladesh</h3>
+                    <p>Sunitix is a registered product by the Directorate General of Drug Administration & Licensing Authority (Drugs) of Bangladesh. Drug Registration Number: 00-000-000 Inclusion Date: 00-00-0000 Valid up to: 00-00-0000</p>
+                    <button class="redmore">Read More</button>
+                  </div>
+                </div>
+              </div>
+             </div>
+          </section>
+         <!-- end content  -->
       </main>
      <!-- start main content  -->
+      <!-- start footer  -->
+       <footer>
+        <div class="footer-top">
+          <div class="text-center pb-5">
+            <h3 class="mb-5 global-s">Global Scarcity of Life Saving Drugs- A Shocking Epidemic</h3>
+            <a class="footer-top-btn" href="#">
+              BEACON: READY TO MEET YOUR NEEDS
+            </a>
+          </div>
+         </div>
+         <div class="footer-bottom">
+          <div style="height: 7px; width: 100%; background: #bd081c; margin-bottom: 10px;"></div>
+          <div class="container px-3">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="footer-bottom-item">
+                  <h4>NEWS & MEDIA</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">
+                      <i class="fa-solid fa-angle-right"></i> Tirziz</a></li>
+                    <li><a href="#">
+                      <i class="fa-solid fa-angle-right"></i> faq</a></li>
+                    <li><a href="#">
+                      <i class="fa-solid fa-angle-right"></i> Media</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer-bottom-item">
+                  <h4>ALL PRODUCTS</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">
+                      <i class="fa-solid fa-angle-right"></i> Oncology Products</a></li>
+                    <li><a href="#">
+                      <i class="fa-solid fa-angle-right"></i> General Products</a></li>
+                    <li><a href="#">
+                      <i class="fa-solid fa-angle-right"></i> Biotech Products</a></li>
+                    <li><a href="#">
+                      <i class="fa-solid fa-angle-right"></i> Product Lists</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer-bottom-item">
+                  <h4>GLOBAL MARKETING PARTNER</h4>
+                  <p>
+                    <strong>Beacon Medicare Limited</strong>
+                    <br>
+                    9/B/2,Toyenbee Circular Road,
+                    <br>
+                    Motijheel,Dhaka-1223, Bangladesh
+                    <br>
+                    <span class="footeritem-p-color">Phone: </span>
+                    <span>+880-2-57165371/79</span>
+                    <span class="footeritem-p-color">E-mail:</span>
+                    <span>info@beaconmedicare.com.bd</span>
+                    <span class="footeritem-p-color">Web:</span>
+                    <span><a class="nav-link text-light" href="#">www.beaconmedicare.com.bd</a></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer-bottom-item">
+                  <h4>HEAD OFFICE</h4>
+                  <p>
+                    <strong>Beacon Pharmaceuticals Limited</strong>
+                    <br>
+                    9/B/2,Toyenbee Circular Road,
+                    <br>
+                    Motijheel,Dhaka-1223, Bangladesh
+                    <br>
+                    <span class="footeritem-p-color">Phone: </span>
+                    <span>+880-2-57165371/79</span>
+                    <span class="footeritem-p-color">E-mail:</span>
+                    <span>info@beaconmedicare.com.bd</span>
+                    <span class="footeritem-p-color">Web:</span>
+                    <span><a class="nav-link text-light" href="#">www.beaconmedicare.com.bd</a></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row  px-2 py-3 align-items-center">
+              <div class="col-lg-6">
+                <div class="copyright-text">
+                  <span style="color: #ea786f;">Copyright © 2024   | Developed By</span>
+                  <span><a class="text-white text-decoration-none" href="#">Beacon Pharmaceuticals PLC</a></span>
+                </div>
+              </div>
+              <div class="col-lg-6 link d-flex justify-content-end gap-4">
+                  <span class="fb"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></i></span>
+                  <span class="tr"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></span>
+                  <span class="pin"><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></span>
+                  <span class="insta"><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+              </div>
+            </div>
+          </div>
+         </div>
+       </footer>
+      <!-- start footer  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".banner-slider", {
+        loop:true,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+     </script>
   </body>
 </html>

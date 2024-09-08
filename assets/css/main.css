@@ -9,6 +9,22 @@ body {
   padding: 0px;
   margin: 0px;
 }
+.title {
+  font-size: 24px;
+  line-height: 1.67;
+  color: #171717;
+  font-weight: 400;
+  font-size: normal;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+}
+.sub-title {
+  font-size: 18px;
+  line-height: 1.67;
+  color: #171717;
+  font-weight: 700;
+  font-size: normal;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+}
 main{
   padding-top: 60px;
 }
@@ -62,6 +78,7 @@ main{
   left: 0px;
   top: 0px;
   bottom: 0px;
+  z-index: 2;
 }
 .left-header .navbar-brand{
   border-bottom: 1px solid #f2f2f2;
@@ -132,7 +149,7 @@ main{
 .social-link {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
+  padding: 50px 50px;
 }
 .social-link span {
   width: 40px;
@@ -156,15 +173,142 @@ main{
   background-color: #ed1559;
   height: 40px;
   width: fit-content;
-  padding: 6px 15px;
+  padding: 6px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
 }
 .odernow-btn span {
   background-color: #ed1559;
+  color: #fff;
   height: 40px;
   width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 1px 15px;
-  padding: 6px 
+  margin-left: 1px;
+  padding: 6px 14px; 
+}
+/* start bannar slider  */
+.banner-slider .swiper-button-prev, .swiper-button-next{
+  opacity: 0;
+}
+.banner-slider:hover  .swiper-button-prev{
+ opacity: 1;
+}
+.banner-slider  .swiper-button-next{
+  opacity: 0;
+}
+.banner-slider:hover  .swiper-button-next{
+ opacity: 1;
+}
+.banner-slider .swiper-button-next,
+.banner-slider .swiper-button-prev {
+  background-color: rgba(0,0,0,.5);
+  padding: 25px;
+  transition: opacity 0.6s ease-in-out;
+}
+.banner-slider .swiper-button-next::after,
+.banner-slider .swiper-button-prev::after  {
+  color: #fff !important;
+  font-size: 25px;
+}
+/* end bannar slider  */
+/* content  */
+.content {
+  padding: 0px 20px;
+}
+.readmor-container > div > div {
+  background-color: #e7eaee;
+  padding: 20px;
+  padding-bottom: 40px;
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+.readmor-container > div > div button {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  width: 175px;
+  border: none;
+  padding: 6px 15px;
+  background: red;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* footer  */
+.footer-top{
+  background-color: rgba(255,255,255,0);
+  background-image: url("http://sunitix.net/wp-content/uploads/2017/08/Home-page-300x169.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-right: 3px;
+  padding-bottom: 80px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.global-s {
+  color: #000080;
+  font: 26px;
+  font-weight: 400;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+}
+.footer-top-btn {
+  padding: 13px 29px;
+  line-height: 17px;
+  font-size: 14px;
+  background-color: #ed1559;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer-bottom {
+  background-color: #1d2939;
+}
+.footer-bottom-item h4{
+  font-size: 13px;
+  text-align: center;
+  padding: 5px 0px;
+  margin-bottom: 28px;
+  background-color: #bd081c;
+  color: #fff;
+  font-family: var(--font-family);
+}
+.footer-link li {
+  padding: 10px 0px;
+  border-bottom: 1px dotted #7a7c7f;
+}
+.footer-link li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: var(--font-family);
+  display: block;
+}
+.footer-link li a:hover {
+  color:#dc2b83;
+}
+.footer-bottom-item p {
+  color: #b6c0ce;
+  font-size: 16px;
+  font-family: var(--font-family);
+  line-height: 30px;
+}
+.footeritem-p-color{
+  color: #0082f4;
+}
+.link span i {
+  color: #fff;
+}
+.copyright-text {
+  font-size: 13px;
+  font-family: var(--font-family);
 }
